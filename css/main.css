@@ -55,9 +55,48 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .main__list {
+    justify-content: space-around;
+  }
+}
+
+.main__item:first-child {
+  margin-bottom: 6rem;
+}
+
+@media (min-width: 576px) {
+  .main__item:first-child {
+    margin-bottom: 0;
+  }
 }
 
 .main__subtitle {
-  font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5rem;
 }
+
+.main__subtitle::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.communities::before {
+  background: url(../images/icon-communities.svg) no-repeat center center;
+}
+
+.messages::before {
+  background: url(../images/icon-messages.svg) no-repeat center center;
+}
+
+.main__list-text {
+  color: rgba(0, 37, 46, .6);
+  font-size: 1.25rem;
+  text-align: center;
+}
+
