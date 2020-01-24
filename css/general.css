@@ -57,4 +57,5 @@ img {
 }
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: #fff; }
+.attribution-footer { background: hsl(192, 100%, 9%); color: #fff; padding: 1rem; }

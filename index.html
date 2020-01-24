@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://kit.fontawesome.com/9498408c94.js" crossorigin="anonymous"></script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:700&display=swap" rel="stylesheet">
@@ -85,23 +86,48 @@
     <a class="call__button" href="#">Get Started For Free</a>
   </section>
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
-  
-  Phone: +1-543-123-4567
-  example@huddle.com
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__block">
+        <img src="images/logo-white.svg" alt="Huddle">
+        <p class="footer__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+        </p>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item footer__contact-item--phone">Phone: +1-543-123-4567</li>
+          <li class="footer__contact-item footer__contact-item--mail">example@huddle.com</li>
+        </ul>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </li>
+          <li class="footer__social-item">
+            <i class="fab fa-instagram fa-2x"></i>
+          </li>
+          <li class="footer__social-item">
+            <i class="fab fa-twitter-square fa-2x"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <h2 class="footer__title">Newsletter</h2>
+        <p class="footer__text footer__text--newsletter">
+          To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address
+        </p>
+        <form class="form-newsletter">
+          <label class="form-newsletter__label" for="email">E-mail</label>
+          <input class="form-newsletter__input" type="email" name="email" id="email">
+          <button class="form-newsletter__button"type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
 
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
-
-  Subscribe
-
-  <footer>
+  <div class="attribution-footer">
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">João Pedro Sanchez</a>.
     </p>
-  </footer>
+  </div>
 </body>
 </html>

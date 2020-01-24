@@ -1,0 +1,91 @@
+.footer {
+  background: hsl(192, 100%, 9%);
+  color: #fff;
+}
+
+.footer::before {
+  background: url(../images/bg-footer-top-mobile.svg) no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 53px;
+  width: 100%;
+}
+
+@media (min-width: 400px) {
+  .footer::before {
+    background: url(../images/bg-footer-top-desktop.svg) no-repeat center center;
+    background-color: #fff;
+    height: 158px;
+  }
+}
+
+.footer__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  padding: 5rem 1rem;
+}
+
+@media (min-width: 769px) {
+  .footer__container {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
+.footer__block {
+  flex: 1;
+}
+
+.footer__text {
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 2rem 0;
+  max-width: 300px;
+}
+
+.footer__text--newsletter {
+  max-width: 340px;
+}
+
+.footer__contact-item {
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer__contact-item::before {
+  content: "";
+  display: block;
+  height: 18px;
+  margin-right: 1.5rem;
+  width: 18px;
+}
+
+.footer__contact-item--phone::before {
+  background: url(../images/icon-phone.svg) no-repeat center center;
+}
+
+.footer__contact-item--mail::before {
+  background: url(../images/icon-email.svg) no-repeat center center;
+}
+
+.footer__social-list {
+  display: flex;
+  margin-top: 3.5rem;
+}
+
+.footer__social-item {
+  margin-right: 1.5rem;
+}
+
+.footer__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
